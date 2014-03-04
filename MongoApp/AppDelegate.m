@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MongoServer.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,9 @@
     [statusItem setMenu:statusMenu];
     [statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
+    
+    MongoServer *server = [MongoServer getInstance];
+    
 }
 
 @end
