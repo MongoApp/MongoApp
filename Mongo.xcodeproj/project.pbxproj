@@ -11,7 +11,7 @@
 		6B32306918C298260064E3D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B32306818C298260064E3D0 /* Foundation.framework */; };
 		6B32306F18C298260064E3D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B32306D18C298260064E3D0 /* InfoPlist.strings */; };
 		6B32307218C298260064E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B32307118C298260064E3D0 /* main.m */; };
-		6B32307918C29BDB0064E3D0 /* ru.pkozlov.MongoService.xpc in Resources */ = {isa = PBXBuildFile; fileRef = 6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */; };
+		6B3FB29618C62CE100AA2705 /* ru.pkozlov.MongoService.xpc in Copy XPC Service */ = {isa = PBXBuildFile; fileRef = 6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */; };
 		6B7A1D1018B4A9EE002493B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */; };
 		6B7A1D1A18B4A9EE002493B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D1818B4A9EE002493B9 /* InfoPlist.strings */; };
 		6B7A1D1C18B4A9EE002493B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A1D1B18B4A9EE002493B9 /* main.m */; };
@@ -41,6 +41,20 @@
 			remoteInfo = MongoApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B0747D018C62C7100339B2E /* Copy XPC Service */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				6B3FB29618C62CE100AA2705 /* ru.pkozlov.MongoService.xpc in Copy XPC Service */,
+			);
+			name = "Copy XPC Service";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6B32306018C27E920064E3D0 /* MongoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoServer.h; sourceTree = "<group>"; };
@@ -232,6 +246,7 @@
 			buildPhases = (
 				6B7A1D0818B4A9EE002493B9 /* Sources */,
 				6B7A1D0918B4A9EE002493B9 /* Frameworks */,
+				6B0747D018C62C7100339B2E /* Copy XPC Service */,
 				6B7A1D0A18B4A9EE002493B9 /* Resources */,
 			);
 			buildRules = (
@@ -309,7 +324,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B32307918C29BDB0064E3D0 /* ru.pkozlov.MongoService.xpc in Resources */,
 				6B7A1D1A18B4A9EE002493B9 /* InfoPlist.strings in Resources */,
 				6B7A1D2818B4A9EE002493B9 /* Images.xcassets in Resources */,
 				6B7A1D2018B4A9EE002493B9 /* Credits.rtf in Resources */,
@@ -595,6 +609,7 @@
 				6B32307518C298260064E3D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B7A1D0718B4A9EE002493B9 /* Build configuration list for PBXProject "Mongo" */ = {
 			isa = XCConfigurationList;
