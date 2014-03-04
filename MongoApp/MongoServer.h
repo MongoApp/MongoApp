@@ -13,7 +13,10 @@
 @property (readonly) BOOL isRunning;
 @property (readonly) NSUInteger port;
 @property (readonly) NSString *binPath;
+@property (readonly) NSString *varPath;
 
 + (MongoServer *) getInstance;
+- (id)initWithExecutablesDirectory:(NSString *)executablesDirectory
+                 databaseDirectory:(NSString *)databaseDirectory;
 
 @end

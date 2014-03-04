@@ -25,6 +25,28 @@ static void MongoService_peer_event_handler(xpc_connection_t peer, xpc_object_t 
 	} else {
 		assert(type == XPC_TYPE_DICTIONARY);
 		// Handle the message.
+        NSString *command = [NSString stringWithUTF8String:xpc_dictionary_get_string(event, "command")];
+        
+        
+        NSMutableArray *mutableArguments = [NSMutableArray array];
+        xpc_array_apply(xpc_dictionary_get_value(event, "arguments"), ^_Bool(size_t index, xpc_object_t obj) {
+            const char *string = xpc_string_get_string_ptr(obj);
+            [mutableArguments addObject:[NSString stringWithUTF8String:string]];
+            return true;
+        });
+        
+        NSTask *task = [[NSTask alloc] init];
+        task.launchPath = command;
+        task.arguments = mutableArguments;
+        
+        __block xpc_object_t reply = xpc_dictionary_create_reply(event);
+        task.terminationHandler = ^(NSTask *task) {
+            xpc_dictionary_set_string(reply, "command", [[task launchPath] UTF8String]);
+            xpc_dictionary_set_int64(reply, "status", [task terminationStatus]);
+            xpc_dictionary_set_int64(reply, "pid", [task processIdentifier]);
+            xpc_connection_send_message(peer, reply);
+        };
+        [task launch];
 	}
 }
 
