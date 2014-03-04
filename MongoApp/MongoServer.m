@@ -19,7 +19,7 @@
     static MongoServer *_instance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
-        NSString *binDirectory = [[NSBundle mainBundle].bundlePath stringByAppendingFormat:@"/mongodb/bin"];
+        NSString *binDirectory = [[NSBundle mainBundle].bundlePath stringByAppendingFormat:@"/Contents/MacOS/mongodb/bin"];
 		NSString *databaseDirectory = @"/usr/local/var/mongodb";
 
         _instance = [[self alloc] initWithExecutablesDirectory:binDirectory databaseDirectory:databaseDirectory];
