@@ -181,11 +181,11 @@
 			children = (
 				6B7A1D2118B4A9EE002493B9 /* AppDelegate.h */,
 				6B7A1D2218B4A9EE002493B9 /* AppDelegate.m */,
+				6B32306018C27E920064E3D0 /* MongoServer.h */,
+				6B32306118C27E920064E3D0 /* MongoServer.m */,
 				6B7A1D2418B4A9EE002493B9 /* MainMenu.xib */,
 				6B7A1D2718B4A9EE002493B9 /* Images.xcassets */,
 				6B7A1D1618B4A9EE002493B9 /* Supporting Files */,
-				6B32306018C27E920064E3D0 /* MongoServer.h */,
-				6B32306118C27E920064E3D0 /* MongoServer.m */,
 			);
 			path = MongoApp;
 			sourceTree = "<group>";
