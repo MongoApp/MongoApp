@@ -1,6 +1,7 @@
 {
   "name": "MongoApp",
   "version": "0.0.1",
+  "mongo_version": "2.4.9",
   "description": "Mongo.app build helper",
   "main": "Gruntfile.js",
   "scripts": {
@@ -17,6 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-exec": "~0.4.5"
+    "grunt-exec": "~0.4.5",
+    "grunt-curl": "~1.4.0"
   }
 }
