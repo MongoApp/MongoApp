@@ -1,0 +1,22 @@
+{
+  "name": "MongoApp",
+  "version": "0.0.1",
+  "description": "Mongo.app build helper",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:gravizappa/mongo.app.git"
+  },
+  "keywords": [
+    "mongo.app"
+  ],
+  "author": "Pavel Kozlov",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-exec": "~0.4.5"
+  }
+}
