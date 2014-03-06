@@ -11,6 +11,14 @@
 
 @implementation AppDelegate
 
+-(void)applicationWillFinishLaunching:(NSNotification *)notification {
+	
+//	[[NSUserDefaults standardUserDefaults] registerDefaults:@{
+//                                                              
+//                                                              }];
+}
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application

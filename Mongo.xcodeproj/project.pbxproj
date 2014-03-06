@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B097F8018C8D6A500826B45 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */; };
+		6B097F8D18C8DE1B00826B45 /* PreferencesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */; };
 		6B32306218C27E920064E3D0 /* MongoServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B32306118C27E920064E3D0 /* MongoServer.m */; };
 		6B32306918C298260064E3D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B32306818C298260064E3D0 /* Foundation.framework */; };
 		6B32306F18C298260064E3D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B32306D18C298260064E3D0 /* InfoPlist.strings */; };
@@ -68,6 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B097F7E18C8C18A00826B45 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		6B097F8B18C8DE1B00826B45 /* PreferencesWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindow.h; sourceTree = "<group>"; };
+		6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindow.m; sourceTree = "<group>"; };
 		6B32306018C27E920064E3D0 /* MongoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoServer.h; sourceTree = "<group>"; };
 		6B32306118C27E920064E3D0 /* MongoServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoServer.m; sourceTree = "<group>"; };
 		6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ru.pkozlov.MongoService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +197,7 @@
 		6B7A1D1518B4A9EE002493B9 /* MongoApp */ = {
 			isa = PBXGroup;
 			children = (
+				6B097F7E18C8C18A00826B45 /* Constants.h */,
 				6B7A1D2118B4A9EE002493B9 /* AppDelegate.h */,
 				6B7A1D2218B4A9EE002493B9 /* AppDelegate.m */,
 				6B32306018C27E920064E3D0 /* MongoServer.h */,
@@ -198,6 +205,9 @@
 				6B7A1D2418B4A9EE002493B9 /* MainMenu.xib */,
 				6B7A1D2718B4A9EE002493B9 /* Images.xcassets */,
 				6B7A1D1618B4A9EE002493B9 /* Supporting Files */,
+				6B097F8B18C8DE1B00826B45 /* PreferencesWindow.h */,
+				6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */,
+				6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */,
 			);
 			path = MongoApp;
 			sourceTree = "<group>";
@@ -339,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B7A1D1A18B4A9EE002493B9 /* InfoPlist.strings in Resources */,
+				6B097F8018C8D6A500826B45 /* PreferencesWindow.xib in Resources */,
 				6B7A1D2818B4A9EE002493B9 /* Images.xcassets in Resources */,
 				6B7A1D2018B4A9EE002493B9 /* Credits.rtf in Resources */,
 				6B7A1D2618B4A9EE002493B9 /* MainMenu.xib in Resources */,
@@ -368,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B097F8D18C8DE1B00826B45 /* PreferencesWindow.m in Sources */,
 				6B32306218C27E920064E3D0 /* MongoServer.m in Sources */,
 				6B7A1D2318B4A9EE002493B9 /* AppDelegate.m in Sources */,
 				6B7A1D1C18B4A9EE002493B9 /* main.m in Sources */,
