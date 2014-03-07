@@ -12,6 +12,8 @@
     IBOutlet NSButton *chkStartAtLogin;
 }
 
++ (PreferencesWindow*)getInstance;
+
 - (IBAction) toggleStartAtLogin: (id)sender;
 
 - (IBAction) chooseDataDirectory: (id)sender;

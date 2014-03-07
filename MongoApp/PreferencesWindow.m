@@ -6,14 +6,26 @@
 //  Copyright (c) 2014 Pavel Kozlov. All rights reserved.
 //
 
+#import <ServiceManagement/ServiceManagement.h>
 #import "PreferencesWindow.h"
 #import "Constants.h"
+#import "NSFileManager+DirectoryLocations.h"
 
 @interface PreferencesWindow ()
 
 @end
 
 @implementation PreferencesWindow
+
+
++ (PreferencesWindow*)getInstance {
+	static PreferencesWindow* instance = nil;
+	static dispatch_once_t predicate;
+	dispatch_once(&predicate, ^{
+		instance = [[PreferencesWindow alloc] initWithWindowNibName:@"PreferencesWindow"];
+	});
+	return instance;
+}
 
 - (id)initWithWindow:(NSWindow *)window
 {
@@ -28,10 +40,26 @@
 {
     [super windowDidLoad];
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    BOOL loginItemEnabled = NO;
+	NSArray *jobs = (__bridge_transfer NSArray *)SMCopyAllJobDictionaries(kSMDomainUserLaunchd);
+	for (NSDictionary *job in jobs) {
+		if ([[job valueForKey:@"Label"] isEqualToString:@"com.postgresapp.PostgresHelper"]) {
+			loginItemEnabled = YES;
+			break;
+		}
+	}
+	[chkStartAtLogin setState: loginItemEnabled ? NSOnState : NSOffState];
+	
+	BOOL loginItemSupported = [[NSBundle mainBundle].bundlePath isEqualToString:@"/Applications/Mongo.app"];
+	if (loginItemSupported) {
+		chkStartAtLogin.target = self;
+		chkStartAtLogin.action = @selector(toggleStartAtLogin:);
+	} else {
+		chkStartAtLogin.enabled = NO;
+	}
 }
 
--(IBAction)chooseDataDirectory:(id)sender;
+- (IBAction) chooseDataDirectory:(id)sender;
 {
 	NSOpenPanel* dataDirPanel = [NSOpenPanel openPanel];
 	dataDirPanel.canChooseDirectories = YES;
@@ -45,7 +73,7 @@
 	}];
 }
 
--(IBAction)chooseLogFile:(id)sender;
+- (IBAction) chooseLogFile:(id)sender;
 {
 	NSOpenPanel* dataDirPanel = [NSOpenPanel openPanel];
 	dataDirPanel.canChooseDirectories = YES;
@@ -57,6 +85,34 @@
 			[[NSUserDefaults standardUserDefaults] setObject:dataDirPanel.URL.path forKey:keyLogFile];
 		}
 	}];
+}
+
+- (IBAction) toggleStartAtLogin:(id)sender
+{
+	BOOL loginItemEnabled = (chkStartAtLogin.state == NSOnState);
+    
+    NSURL *helperApplicationURL = [[NSBundle mainBundle].bundleURL URLByAppendingPathComponent:@"Contents/Library/LoginItems/MongoHelper.app"];
+    if (LSRegisterURL((__bridge CFURLRef)helperApplicationURL, true) != noErr) {
+        NSLog(@"LSRegisterURL Failed");
+    }
+    
+    BOOL stateChangeSuccessful = SMLoginItemSetEnabled(CFSTR("ru.pkozlov.MongoHelper"), loginItemEnabled);
+	if (!stateChangeSuccessful) {
+        NSError *error = [NSError errorWithDomain:@"ru.pkozlov.Mongo" code:1 userInfo:@{ NSLocalizedDescriptionKey: @"Failed to set login item."}];
+		[self presentError:error modalForWindow:self.window delegate:nil didPresentSelector:NULL contextInfo:NULL];
+		chkStartAtLogin.state = loginItemEnabled ? NSOffState : NSOnState;
+    }
+}
+
+- (IBAction)setDefaults:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:valueDataDirectory forKey:keyDataDirectory];
+    [defaults setObject:valueLogFile forKey:keyLogFile];
+    [defaults setInteger:valueDefaultPort forKey:keyDefaultPort];
+    [defaults setBool:valueEnableRest forKey:keyEnableRest];
+    
+    [defaults synchronize];
 }
 
 @end

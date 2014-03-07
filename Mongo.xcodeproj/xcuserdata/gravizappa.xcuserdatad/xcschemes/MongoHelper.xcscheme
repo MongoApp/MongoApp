@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B7A1D0B18B4A9EE002493B9"
-               BuildableName = "Mongo.app"
-               BlueprintName = "Mongo"
+               BlueprintIdentifier = "6B097F9C18C9DEF900826B45"
+               BuildableName = "MongoHelper.app"
+               BlueprintName = "MongoHelper"
                ReferencedContainer = "container:Mongo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B7A1D2C18B4A9EE002493B9"
-               BuildableName = "MongoTests.xctest"
-               BlueprintName = "MongoTests"
-               ReferencedContainer = "container:Mongo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B097FB618C9DEF900826B45"
-               BuildableName = "MongoHelperTests.xctest"
-               BlueprintName = "MongoHelperTests"
-               ReferencedContainer = "container:Mongo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7A1D0B18B4A9EE002493B9"
-            BuildableName = "Mongo.app"
-            BlueprintName = "Mongo"
+            BlueprintIdentifier = "6B097F9C18C9DEF900826B45"
+            BuildableName = "MongoHelper.app"
+            BlueprintName = "MongoHelper"
             ReferencedContainer = "container:Mongo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7A1D0B18B4A9EE002493B9"
-            BuildableName = "Mongo.app"
-            BlueprintName = "Mongo"
+            BlueprintIdentifier = "6B097F9C18C9DEF900826B45"
+            BuildableName = "MongoHelper.app"
+            BlueprintName = "MongoHelper"
             ReferencedContainer = "container:Mongo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7A1D0B18B4A9EE002493B9"
-            BuildableName = "Mongo.app"
-            BlueprintName = "Mongo"
+            BlueprintIdentifier = "6B097F9C18C9DEF900826B45"
+            BuildableName = "MongoHelper.app"
+            BlueprintName = "MongoHelper"
             ReferencedContainer = "container:Mongo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		6B097F8018C8D6A500826B45 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */; };
 		6B097F8D18C8DE1B00826B45 /* PreferencesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */; };
+		6B097F9618C9D25500826B45 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B097F9518C9D25500826B45 /* NSFileManager+DirectoryLocations.m */; };
+		6B097F9818C9DC1B00826B45 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B097F9718C9DC1B00826B45 /* ServiceManagement.framework */; };
+		6B097F9E18C9DEF900826B45 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */; };
+		6B097FA418C9DEF900826B45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B097FA218C9DEF900826B45 /* InfoPlist.strings */; };
+		6B097FA618C9DEF900826B45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B097FA518C9DEF900826B45 /* main.m */; };
+		6B097FAA18C9DEF900826B45 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6B097FA818C9DEF900826B45 /* Credits.rtf */; };
+		6B097FAD18C9DEF900826B45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B097FAC18C9DEF900826B45 /* AppDelegate.m */; };
+		6B097FB018C9DEF900826B45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B097FAE18C9DEF900826B45 /* MainMenu.xib */; };
+		6B097FB218C9DEF900826B45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B097FB118C9DEF900826B45 /* Images.xcassets */; };
+		6B097FCD18C9EDDD00826B45 /* MongoHelper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 6B097F9D18C9DEF900826B45 /* MongoHelper.app */; };
 		6B32306218C27E920064E3D0 /* MongoServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B32306118C27E920064E3D0 /* MongoServer.m */; };
 		6B32306918C298260064E3D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B32306818C298260064E3D0 /* Foundation.framework */; };
 		6B32306F18C298260064E3D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B32306D18C298260064E3D0 /* InfoPlist.strings */; };
 		6B32307218C298260064E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B32307118C298260064E3D0 /* main.m */; };
-		6B3230A118C681590064E3D0 /* mongodb in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B3230A018C681590064E3D0 /* mongodb */; };
+		6B3230A118C681590064E3D0 /* mongodb in Copy Database Binary */ = {isa = PBXBuildFile; fileRef = 6B3230A018C681590064E3D0 /* mongodb */; };
 		6B3FB29618C62CE100AA2705 /* ru.pkozlov.MongoService.xpc in Copy XPC Service */ = {isa = PBXBuildFile; fileRef = 6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */; };
 		6B7A1D1018B4A9EE002493B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */; };
 		6B7A1D1A18B4A9EE002493B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D1818B4A9EE002493B9 /* InfoPlist.strings */; };
@@ -22,26 +32,22 @@
 		6B7A1D2318B4A9EE002493B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2218B4A9EE002493B9 /* AppDelegate.m */; };
 		6B7A1D2618B4A9EE002493B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2418B4A9EE002493B9 /* MainMenu.xib */; };
 		6B7A1D2818B4A9EE002493B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2718B4A9EE002493B9 /* Images.xcassets */; };
-		6B7A1D2F18B4A9EE002493B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7A1D2E18B4A9EE002493B9 /* XCTest.framework */; };
-		6B7A1D3018B4A9EE002493B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */; };
-		6B7A1D3818B4A9EE002493B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D3618B4A9EE002493B9 /* InfoPlist.strings */; };
-		6B7A1D3A18B4A9EE002493B9 /* MongoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A1D3918B4A9EE002493B9 /* MongoAppTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6B097FCA18C9ECD500826B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B7A1D0418B4A9EE002493B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B097F9C18C9DEF900826B45;
+			remoteInfo = MongoHelper;
+		};
 		6B32307718C29B910064E3D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B7A1D0418B4A9EE002493B9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6B32306618C298260064E3D0;
 			remoteInfo = MongoService;
-		};
-		6B7A1D3118B4A9EE002493B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6B7A1D0418B4A9EE002493B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6B7A1D0B18B4A9EE002493B9;
-			remoteInfo = MongoApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,14 +63,26 @@
 			name = "Copy XPC Service";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B32309F18C6811F0064E3D0 /* CopyFiles */ = {
+		6B097FCC18C9ED9F00826B45 /* Copy Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				6B097FCD18C9EDDD00826B45 /* MongoHelper.app in Copy Helper */,
+			);
+			name = "Copy Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B32309F18C6811F0064E3D0 /* Copy Database Binary */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				6B3230A118C681590064E3D0 /* mongodb in CopyFiles */,
+				6B3230A118C681590064E3D0 /* mongodb in Copy Database Binary */,
 			);
+			name = "Copy Database Binary";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -74,6 +92,19 @@
 		6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		6B097F8B18C8DE1B00826B45 /* PreferencesWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindow.h; sourceTree = "<group>"; };
 		6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindow.m; sourceTree = "<group>"; };
+		6B097F9418C9D25500826B45 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		6B097F9518C9D25500826B45 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		6B097F9718C9DC1B00826B45 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		6B097F9D18C9DEF900826B45 /* MongoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B097FA118C9DEF900826B45 /* MongoHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MongoHelper-Info.plist"; sourceTree = "<group>"; };
+		6B097FA318C9DEF900826B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B097FA518C9DEF900826B45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B097FA718C9DEF900826B45 /* MongoHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MongoHelper-Prefix.pch"; sourceTree = "<group>"; };
+		6B097FA918C9DEF900826B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6B097FAB18C9DEF900826B45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B097FAC18C9DEF900826B45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B097FAF18C9DEF900826B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6B097FB118C9DEF900826B45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6B32306018C27E920064E3D0 /* MongoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoServer.h; sourceTree = "<group>"; };
 		6B32306118C27E920064E3D0 /* MongoServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoServer.m; sourceTree = "<group>"; };
 		6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ru.pkozlov.MongoService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,14 +128,18 @@
 		6B7A1D2218B4A9EE002493B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6B7A1D2518B4A9EE002493B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6B7A1D2718B4A9EE002493B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6B7A1D2D18B4A9EE002493B9 /* MongoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7A1D2E18B4A9EE002493B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6B7A1D3518B4A9EE002493B9 /* MongoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MongoTests-Info.plist"; sourceTree = "<group>"; };
-		6B7A1D3718B4A9EE002493B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6B7A1D3918B4A9EE002493B9 /* MongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MongoAppTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6B097F9A18C9DEF900826B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B097F9E18C9DEF900826B45 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B32306418C298260064E3D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,22 +152,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B097F9818C9DC1B00826B45 /* ServiceManagement.framework in Frameworks */,
 				6B7A1D1018B4A9EE002493B9 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B7A1D2A18B4A9EE002493B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B7A1D3018B4A9EE002493B9 /* Cocoa.framework in Frameworks */,
-				6B7A1D2F18B4A9EE002493B9 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B097F9F18C9DEF900826B45 /* MongoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6B097FAB18C9DEF900826B45 /* AppDelegate.h */,
+				6B097FAC18C9DEF900826B45 /* AppDelegate.m */,
+				6B097FAE18C9DEF900826B45 /* MainMenu.xib */,
+				6B097FB118C9DEF900826B45 /* Images.xcassets */,
+				6B097FA018C9DEF900826B45 /* Supporting Files */,
+			);
+			path = MongoHelper;
+			sourceTree = "<group>";
+		};
+		6B097FA018C9DEF900826B45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B097FA118C9DEF900826B45 /* MongoHelper-Info.plist */,
+				6B097FA218C9DEF900826B45 /* InfoPlist.strings */,
+				6B097FA518C9DEF900826B45 /* main.m */,
+				6B097FA718C9DEF900826B45 /* MongoHelper-Prefix.pch */,
+				6B097FA818C9DEF900826B45 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6B32306A18C298260064E3D0 /* MongoService */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				6B7A1D1518B4A9EE002493B9 /* MongoApp */,
-				6B7A1D3318B4A9EE002493B9 /* MongoAppTests */,
 				6B32306A18C298260064E3D0 /* MongoService */,
+				6B097F9F18C9DEF900826B45 /* MongoHelper */,
 				6B7A1D0E18B4A9EE002493B9 /* Frameworks */,
 				6B7A1D0D18B4A9EE002493B9 /* Products */,
 			);
@@ -167,8 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				6B7A1D0C18B4A9EE002493B9 /* Mongo.app */,
-				6B7A1D2D18B4A9EE002493B9 /* MongoTests.xctest */,
 				6B32306718C298260064E3D0 /* ru.pkozlov.MongoService.xpc */,
+				6B097F9D18C9DEF900826B45 /* MongoHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +227,7 @@
 		6B7A1D0E18B4A9EE002493B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B097F9718C9DC1B00826B45 /* ServiceManagement.framework */,
 				6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */,
 				6B7A1D2E18B4A9EE002493B9 /* XCTest.framework */,
 				6B32306818C298260064E3D0 /* Foundation.framework */,
@@ -203,11 +255,13 @@
 				6B32306018C27E920064E3D0 /* MongoServer.h */,
 				6B32306118C27E920064E3D0 /* MongoServer.m */,
 				6B7A1D2418B4A9EE002493B9 /* MainMenu.xib */,
-				6B7A1D2718B4A9EE002493B9 /* Images.xcassets */,
-				6B7A1D1618B4A9EE002493B9 /* Supporting Files */,
 				6B097F8B18C8DE1B00826B45 /* PreferencesWindow.h */,
 				6B097F8C18C8DE1B00826B45 /* PreferencesWindow.m */,
 				6B097F7F18C8D6A500826B45 /* PreferencesWindow.xib */,
+				6B097F9418C9D25500826B45 /* NSFileManager+DirectoryLocations.h */,
+				6B097F9518C9D25500826B45 /* NSFileManager+DirectoryLocations.m */,
+				6B7A1D2718B4A9EE002493B9 /* Images.xcassets */,
+				6B7A1D1618B4A9EE002493B9 /* Supporting Files */,
 			);
 			path = MongoApp;
 			sourceTree = "<group>";
@@ -225,27 +279,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6B7A1D3318B4A9EE002493B9 /* MongoAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				6B7A1D3918B4A9EE002493B9 /* MongoAppTests.m */,
-				6B7A1D3418B4A9EE002493B9 /* Supporting Files */,
-			);
-			path = MongoAppTests;
-			sourceTree = "<group>";
-		};
-		6B7A1D3418B4A9EE002493B9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6B7A1D3518B4A9EE002493B9 /* MongoTests-Info.plist */,
-				6B7A1D3618B4A9EE002493B9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6B097F9C18C9DEF900826B45 /* MongoHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B097FC418C9DEF900826B45 /* Build configuration list for PBXNativeTarget "MongoHelper" */;
+			buildPhases = (
+				6B097F9918C9DEF900826B45 /* Sources */,
+				6B097F9A18C9DEF900826B45 /* Frameworks */,
+				6B097F9B18C9DEF900826B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MongoHelper;
+			productName = MongoHelper;
+			productReference = 6B097F9D18C9DEF900826B45 /* MongoHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6B32306618C298260064E3D0 /* MongoService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B32307318C298260064E3D0 /* Build configuration list for PBXNativeTarget "MongoService" */;
@@ -271,35 +324,19 @@
 				6B7A1D0918B4A9EE002493B9 /* Frameworks */,
 				6B0747D018C62C7100339B2E /* Copy XPC Service */,
 				6B7A1D0A18B4A9EE002493B9 /* Resources */,
-				6B32309F18C6811F0064E3D0 /* CopyFiles */,
+				6B32309F18C6811F0064E3D0 /* Copy Database Binary */,
+				6B097FCC18C9ED9F00826B45 /* Copy Helper */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6B097FCB18C9ECD500826B45 /* PBXTargetDependency */,
 				6B32307818C29B910064E3D0 /* PBXTargetDependency */,
 			);
 			name = Mongo;
 			productName = MongoApp;
 			productReference = 6B7A1D0C18B4A9EE002493B9 /* Mongo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6B7A1D2C18B4A9EE002493B9 /* MongoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6B7A1D4018B4A9EE002493B9 /* Build configuration list for PBXNativeTarget "MongoTests" */;
-			buildPhases = (
-				6B7A1D2918B4A9EE002493B9 /* Sources */,
-				6B7A1D2A18B4A9EE002493B9 /* Frameworks */,
-				6B7A1D2B18B4A9EE002493B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6B7A1D3218B4A9EE002493B9 /* PBXTargetDependency */,
-			);
-			name = MongoTests;
-			productName = MongoAppTests;
-			productReference = 6B7A1D2D18B4A9EE002493B9 /* MongoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -309,11 +346,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Pavel Kozlov";
-				TargetAttributes = {
-					6B7A1D2C18B4A9EE002493B9 = {
-						TestTargetID = 6B7A1D0B18B4A9EE002493B9;
-					};
-				};
 			};
 			buildConfigurationList = 6B7A1D0718B4A9EE002493B9 /* Build configuration list for PBXProject "Mongo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,13 +361,24 @@
 			projectRoot = "";
 			targets = (
 				6B7A1D0B18B4A9EE002493B9 /* Mongo */,
-				6B7A1D2C18B4A9EE002493B9 /* MongoTests */,
 				6B32306618C298260064E3D0 /* MongoService */,
+				6B097F9C18C9DEF900826B45 /* MongoHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6B097F9B18C9DEF900826B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B097FA418C9DEF900826B45 /* InfoPlist.strings in Resources */,
+				6B097FB218C9DEF900826B45 /* Images.xcassets in Resources */,
+				6B097FAA18C9DEF900826B45 /* Credits.rtf in Resources */,
+				6B097FB018C9DEF900826B45 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B32306518C298260064E3D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,17 +399,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B7A1D2B18B4A9EE002493B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B7A1D3818B4A9EE002493B9 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6B097F9918C9DEF900826B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B097FAD18C9DEF900826B45 /* AppDelegate.m in Sources */,
+				6B097FA618C9DEF900826B45 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B32306318C298260064E3D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,36 +424,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B097F8D18C8DE1B00826B45 /* PreferencesWindow.m in Sources */,
+				6B097F9618C9D25500826B45 /* NSFileManager+DirectoryLocations.m in Sources */,
 				6B32306218C27E920064E3D0 /* MongoServer.m in Sources */,
 				6B7A1D2318B4A9EE002493B9 /* AppDelegate.m in Sources */,
 				6B7A1D1C18B4A9EE002493B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B7A1D2918B4A9EE002493B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B7A1D3A18B4A9EE002493B9 /* MongoAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6B097FCB18C9ECD500826B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B097F9C18C9DEF900826B45 /* MongoHelper */;
+			targetProxy = 6B097FCA18C9ECD500826B45 /* PBXContainerItemProxy */;
+		};
 		6B32307818C29B910064E3D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6B32306618C298260064E3D0 /* MongoService */;
 			targetProxy = 6B32307718C29B910064E3D0 /* PBXContainerItemProxy */;
 		};
-		6B7A1D3218B4A9EE002493B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6B7A1D0B18B4A9EE002493B9 /* Mongo */;
-			targetProxy = 6B7A1D3118B4A9EE002493B9 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6B097FA218C9DEF900826B45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B097FA318C9DEF900826B45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B097FA818C9DEF900826B45 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B097FA918C9DEF900826B45 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6B097FAE18C9DEF900826B45 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B097FAF18C9DEF900826B45 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		6B32306D18C298260064E3D0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,17 +503,39 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		6B7A1D3618B4A9EE002493B9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B7A1D3718B4A9EE002493B9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6B097FC518C9DEF900826B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MongoHelper/MongoHelper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B097FC618C9DEF900826B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MongoHelper/MongoHelper-Prefix.pch";
+				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		6B32307418C298260064E3D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -585,49 +668,17 @@
 			};
 			name = Release;
 		};
-		6B7A1D4118B4A9EE002493B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mongo.app/Contents/MacOS/Mongo";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MongoApp/MongoApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MongoAppTests/MongoTests-Info.plist";
-				PRODUCT_NAME = MongoTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6B7A1D4218B4A9EE002493B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mongo.app/Contents/MacOS/Mongo";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MongoApp/MongoApp-Prefix.pch";
-				INFOPLIST_FILE = "MongoAppTests/MongoTests-Info.plist";
-				PRODUCT_NAME = MongoTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6B097FC418C9DEF900826B45 /* Build configuration list for PBXNativeTarget "MongoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B097FC518C9DEF900826B45 /* Debug */,
+				6B097FC618C9DEF900826B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6B32307318C298260064E3D0 /* Build configuration list for PBXNativeTarget "MongoService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -651,15 +702,6 @@
 			buildConfigurations = (
 				6B7A1D3E18B4A9EE002493B9 /* Debug */,
 				6B7A1D3F18B4A9EE002493B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6B7A1D4018B4A9EE002493B9 /* Build configuration list for PBXNativeTarget "MongoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6B7A1D4118B4A9EE002493B9 /* Debug */,
-				6B7A1D4218B4A9EE002493B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

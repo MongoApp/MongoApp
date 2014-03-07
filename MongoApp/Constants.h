@@ -13,3 +13,8 @@ static NSString * const keyEnableRest = @"RestEnable";
 static BOOL const valueEnableRest = NO;
 static NSString * const keyLogFile = @"LogFile";
 
+// Initialized values
+
+static NSString * valueDataDirectory;
+static NSString * valueLogFile;
+
