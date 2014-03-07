@@ -33,5 +33,6 @@
                                error:(NSError **)errorOut;
 
 - (NSString *) applicationSupportDirectory;
+- (BOOL) createDirectoryAtPath: (NSString*)path;
 
 @end

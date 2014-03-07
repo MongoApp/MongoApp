@@ -76,7 +76,7 @@
 - (IBAction) chooseLogFile:(id)sender;
 {
 	NSOpenPanel* dataDirPanel = [NSOpenPanel openPanel];
-	dataDirPanel.canChooseDirectories = YES;
+	dataDirPanel.canChooseDirectories = NO;
 	dataDirPanel.canChooseFiles = YES;
 	dataDirPanel.canCreateDirectories = YES;
 	dataDirPanel.directoryURL = [NSURL fileURLWithPath:[[NSUserDefaults standardUserDefaults] stringForKey:keyLogFile]];
@@ -108,9 +108,9 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:valueDataDirectory forKey:keyDataDirectory];
-    [defaults setObject:valueLogFile forKey:keyLogFile];
-    [defaults setInteger:valueDefaultPort forKey:keyDefaultPort];
-    [defaults setBool:valueEnableRest forKey:keyEnableRest];
+//    [defaults setObject:valueLogFile forKey:keyLogFile];
+//    [defaults setInteger:valueDefaultPort forKey:keyDefaultPort];
+//    [defaults setBool:valueEnableRest forKey:keyEnableRest];
     
     [defaults synchronize];
 }

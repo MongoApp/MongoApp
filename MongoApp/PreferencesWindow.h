@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PreferencesWindow : NSWindowController {
+@interface PreferencesWindow : NSWindowController<NSWindowDelegate> {
     IBOutlet NSButton *chkStartAtLogin;
 }
 

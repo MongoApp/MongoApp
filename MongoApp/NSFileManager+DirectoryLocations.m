@@ -152,5 +152,16 @@ NSString * const DirectoryLocationDomain = @"DirectoryLocationDomain";
 	return result;
 }
 
+- (BOOL) createDirectoryAtPath: (NSString*)path
+{
+    NSError *error = nil;
+	BOOL success = [self
+                    createDirectoryAtPath:path
+                    withIntermediateDirectories:YES
+                    attributes:nil
+                    error:&error];
+    return success;
+}
+
 
 @end

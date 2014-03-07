@@ -17,9 +17,21 @@
                 <menuItem isSeparatorItem="YES" id="9tA-FC-31v"/>
                 <menuItem title="Open mongo console" id="rCj-Fx-if5">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openMongo:" target="494" id="Wh0-Bh-kkv"/>
+                    </connections>
                 </menuItem>
-                <menuItem title="Open admin" id="hM7-dP-Ap8">
+                <menuItem title="Open admin web console" id="hM7-dP-Ap8">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openAdmin:" target="494" id="gpe-ew-Mef"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Open log file" id="Y9y-MI-0m3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openLogfile:" target="494" id="fhQ-8Z-MWf"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="ixs-v7-FOi"/>
                 <menuItem title="Preferences" id="4YD-37-tYV">
@@ -46,6 +58,7 @@
         <customObject id="494" customClass="AppDelegate">
             <connections>
                 <outlet property="statusMenu" destination="MUc-4q-VTT" id="uH5-46-kvU"/>
+                <outlet property="statusMenuItem" destination="abb-pW-NFC" id="azB-v9-HIF"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>

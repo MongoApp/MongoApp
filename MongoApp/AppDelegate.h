@@ -12,9 +12,13 @@
 //    NSWindow *window;
     IBOutlet NSMenu *statusMenu;
     NSStatusItem *statusItem;
+    
+    IBOutlet NSMenuItem *statusMenuItem;
 }
 
 //@property (assign) IBOutlet NSWindow *window;
 - (IBAction) openPreferences:(id)sender;
 - (IBAction) openAbout:(id)sender;
+- (IBAction)openAdmin:(id)sender;
+- (IBAction) openLogfile:(id)sender;
 @end

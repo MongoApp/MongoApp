@@ -12,9 +12,11 @@ static NSString * const keyDataDirectory = @"DataDirectory";
 static NSString * const keyEnableRest = @"RestEnable";
 static BOOL const valueEnableRest = NO;
 static NSString * const keyLogFile = @"LogFile";
+static NSString * const keyPidFile = @"PidFile";
 
 // Initialized values
 
 static NSString * valueDataDirectory;
 static NSString * valueLogFile;
+static NSString * valuePidFile;
 

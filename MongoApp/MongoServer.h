@@ -13,10 +13,16 @@
 @property (readonly) BOOL isRunning;
 @property (readonly) NSUInteger port;
 @property (readonly) NSString *binPath;
+@property (readonly) NSString *logFile;
 @property (readonly) NSString *varPath;
 
 + (MongoServer *) getInstance;
-- (id)initWithExecutablesDirectory:(NSString *)executablesDirectory
-                 databaseDirectory:(NSString *)databaseDirectory;
 
+- (id)init;
+- (void)startWithTerminationHandler:(void (^)(NSUInteger status))terminationHandler;
+- (void)stopWithTerminationHandler:(void (^)(NSUInteger status))terminationHandler;
+
+- (void)executeCommandNamed:(NSString *)command
+                  arguments:(NSArray *)arguments
+         terminationHandler:(void (^)(NSUInteger status))terminationHandler;
 @end
