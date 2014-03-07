@@ -32,7 +32,7 @@
                 <menuItem title="About Mongo.app" id="Xlh-Mz-M1a">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="orderFrontStandardAboutPanel:" target="-2" id="l6X-rz-l7d"/>
+                        <action selector="openAbout:" target="-1" id="rWT-ce-Ba3"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="136">

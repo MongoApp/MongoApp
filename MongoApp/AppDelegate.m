@@ -50,4 +50,10 @@
 	[[PreferencesWindow getInstance] showWindow:nil];
 }
 
+- (IBAction)openAbout:(id)sender
+{
+    [NSApp activateIgnoringOtherApps:YES];
+    [NSApp orderFrontStandardAboutPanel:nil];
+}
+
 @end
