@@ -53,7 +53,8 @@
 {
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:statusMenu];
-    [statusItem setTitle:@"Status"];
+    // [statusItem setTitle:@"Status"];
+    [statusItem setImage:[NSImage imageNamed:@"StatusIcon"]];
     [statusItem setHighlightMode:YES];
 
 }

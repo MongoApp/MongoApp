@@ -38,6 +38,7 @@ static void MongoService_peer_event_handler(xpc_connection_t peer, xpc_object_t 
         task.launchPath = command;
         task.arguments = mutableArguments;
         NSLog(@"Starting NSTask");
+        NSLog(@"launchPath: %@", task.launchPath);
         
         __block xpc_object_t reply = xpc_dictionary_create_reply(event);
         task.terminationHandler = ^(NSTask *task) {

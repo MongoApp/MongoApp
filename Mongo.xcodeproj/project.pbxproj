@@ -678,6 +678,7 @@
 				6B097FC618C9DEF900826B45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B32307318C298260064E3D0 /* Build configuration list for PBXNativeTarget "MongoService" */ = {
 			isa = XCConfigurationList;

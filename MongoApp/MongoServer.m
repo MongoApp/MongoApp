@@ -127,6 +127,7 @@
                   arguments:(NSArray *)arguments
          terminationHandler:(void (^)(NSUInteger status))terminationHandler
 {
+    NSLog(@"Command: %@", command);
 	xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
     
     xpc_dictionary_set_string(message, "command", [command UTF8String]);
