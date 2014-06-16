@@ -15,7 +15,8 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'tmp/mongodb-osx-x86_64-<%= pkg.mongo_version %>/',
                 src: ['**'],
-                dest: 'mongodb/'
+                dest: 'mongodb/',
+                mode: true
             }]
           }
         },
@@ -27,7 +28,7 @@ module.exports = function(grunt) {
                 stderr: true
             },
             chmod: {
-                cmd: 'chmod +x ./tmp/mongodb-osx-x86_64-<%= pkg.mongo_version %>/bin/*',
+                cmd: 'chmod +x ./mongodb/bin/*',
                 // cwd: '.',
                 stdout: true,
                 stderr: true
@@ -47,7 +48,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('download', ['curl']);
-    grunt.registerTask('unzip', ['exec:unzip', 'exec:chmod', 'copy:mongodb']);
+    grunt.registerTask('unzip', ['exec:unzip', 'copy:mongodb', 'exec:chmod']);
     grunt.registerTask('build', ['exec:build']);
 
     grunt.registerTask('default', ['download', 'unzip', 'build']);
