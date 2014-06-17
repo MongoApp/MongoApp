@@ -1,11 +1,11 @@
 Mongo.app
 =========
 
-Mongo.app is easiest way to run MongoDB on the Mac
+[Mongo.app](http://mongoapp.com/) is easiest way to run MongoDB on the Mac
 
-### Install
+### Installation
 
-Unzip and copy Mongo.app to /Application directory and double-click.
+Unzip archive, copy Mongo.app to /Application folder and double-click.
 
 ### Build
 
