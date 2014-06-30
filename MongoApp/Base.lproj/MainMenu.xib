@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -41,10 +41,16 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="bT1-gg-ISH"/>
-                <menuItem title="About Mongo.app" id="Xlh-Mz-M1a">
+                <menuItem title="Check for updates..." id="Xlh-Mz-M1a">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="openAbout:" target="-1" id="rWT-ce-Ba3"/>
+                        <action selector="checkForUpdates:" target="DQ0-XC-Ef5" id="9JG-mX-2kN"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="About Mongo.app" id="uNq-Pb-B0v">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openAbout:" target="-1" id="6td-pj-LsS"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="136">
@@ -62,5 +68,6 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="DQ0-XC-Ef5" customClass="SUUpdater"/>
     </objects>
 </document>

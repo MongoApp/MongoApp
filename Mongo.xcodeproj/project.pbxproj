@@ -32,6 +32,8 @@
 		6B7A1D2318B4A9EE002493B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2218B4A9EE002493B9 /* AppDelegate.m */; };
 		6B7A1D2618B4A9EE002493B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2418B4A9EE002493B9 /* MainMenu.xib */; };
 		6B7A1D2818B4A9EE002493B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B7A1D2718B4A9EE002493B9 /* Images.xcassets */; };
+		6BD24EBB19614CBD00F4AACB /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD24EBA19614CBD00F4AACB /* Sparkle.framework */; };
+		6BD24EBD19614D8C00F4AACB /* Sparkle.framework in Copy Sparkle Framework */ = {isa = PBXBuildFile; fileRef = 6BD24EBA19614CBD00F4AACB /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,17 @@
 			name = "Copy Database Binary";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BD24EBC19614D6A00F4AACB /* Copy Sparkle Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6BD24EBD19614D8C00F4AACB /* Sparkle.framework in Copy Sparkle Framework */,
+			);
+			name = "Copy Sparkle Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +142,7 @@
 		6B7A1D2518B4A9EE002493B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6B7A1D2718B4A9EE002493B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6B7A1D2E18B4A9EE002493B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6BD24EBA19614CBD00F4AACB /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B097F9818C9DC1B00826B45 /* ServiceManagement.framework in Frameworks */,
+				6BD24EBB19614CBD00F4AACB /* Sparkle.framework in Frameworks */,
 				6B7A1D1018B4A9EE002493B9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +242,7 @@
 		6B7A1D0E18B4A9EE002493B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BD24EBA19614CBD00F4AACB /* Sparkle.framework */,
 				6B097F9718C9DC1B00826B45 /* ServiceManagement.framework */,
 				6B7A1D0F18B4A9EE002493B9 /* Cocoa.framework */,
 				6B7A1D2E18B4A9EE002493B9 /* XCTest.framework */,
@@ -326,6 +342,7 @@
 				6B7A1D0A18B4A9EE002493B9 /* Resources */,
 				6B32309F18C6811F0064E3D0 /* Copy Database Binary */,
 				6B097FCC18C9ED9F00826B45 /* Copy Helper */,
+				6BD24EBC19614D6A00F4AACB /* Copy Sparkle Framework */,
 			);
 			buildRules = (
 			);
@@ -642,6 +659,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gravizappa/Projects/My/MongoApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoApp/Mongo-Prefix.pch";
@@ -659,6 +677,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gravizappa/Projects/My/MongoApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoApp/Mongo-Prefix.pch";
