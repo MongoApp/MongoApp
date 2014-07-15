@@ -363,6 +363,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Pavel Kozlov";
+				TargetAttributes = {
+					6B7A1D0B18B4A9EE002493B9 = {
+						DevelopmentTeam = M6E88M298T;
+					};
+				};
 			};
 			buildConfigurationList = 6B7A1D0718B4A9EE002493B9 /* Build configuration list for PBXProject "Mongo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -655,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,6 +670,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoApp/Mongo-Prefix.pch";
 				INFOPLIST_FILE = "MongoApp/Mongo-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = Mongo;
 				WRAPPER_EXTENSION = app;
 			};
@@ -673,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,6 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoApp/Mongo-Prefix.pch";
 				INFOPLIST_FILE = "MongoApp/Mongo-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = Mongo;
 				WRAPPER_EXTENSION = app;
 			};
