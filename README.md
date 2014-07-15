@@ -19,7 +19,6 @@ For build project you must have installed xCode version >= 5, node.js, npm and g
 ### TODO
 
 - change status icon to show server status
-- add Sparkle framework for updates
 - create documentation
 - create and restore dumps from menu
 - `may be` add some gui for database managing (mongo-express?)
