@@ -10,29 +10,29 @@
 	<string>Mongo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>72845495-2B99-4E31-9B48-79404C362490</key>
-		<string>ssh://bitbucket.org/gravizappa/mongo.app.git</string>
+		<key>850CE0ABFA9B265CB68126DE72AA418B15B24B87</key>
+		<string>https://github.com/MongoApp/MongoApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Mongo.xcodeproj/project.xcworkspace</string>
+	<string>Mongo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>72845495-2B99-4E31-9B48-79404C362490</key>
+		<key>850CE0ABFA9B265CB68126DE72AA418B15B24B87</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://bitbucket.org/gravizappa/mongo.app.git</string>
+	<string>https://github.com/MongoApp/MongoApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>72845495-2B99-4E31-9B48-79404C362490</string>
+	<string>850CE0ABFA9B265CB68126DE72AA418B15B24B87</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>72845495-2B99-4E31-9B48-79404C362490</string>
+			<string>850CE0ABFA9B265CB68126DE72AA418B15B24B87</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MongoApp</string>
 		</dict>
