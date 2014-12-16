@@ -364,6 +364,12 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Pavel Kozlov";
 				TargetAttributes = {
+					6B097F9C18C9DEF900826B45 = {
+						DevelopmentTeam = M6E88M298T;
+					};
+					6B32306618C298260064E3D0 = {
+						DevelopmentTeam = M6E88M298T;
+					};
 					6B7A1D0B18B4A9EE002493B9 = {
 						DevelopmentTeam = M6E88M298T;
 					};
@@ -532,6 +538,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoHelper/MongoHelper-Prefix.pch";
@@ -541,6 +549,7 @@
 				);
 				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -549,11 +558,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoHelper/MongoHelper-Prefix.pch";
 				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -561,6 +573,8 @@
 		6B32307418C298260064E3D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoService/MongoService-Prefix.pch";
@@ -571,6 +585,7 @@
 				INFOPLIST_FILE = "MongoService/MongoService-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "ru.pkozlov.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Debug;
@@ -578,12 +593,15 @@
 		6B32307518C298260064E3D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MongoService/MongoService-Prefix.pch";
 				INFOPLIST_FILE = "MongoService/MongoService-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "ru.pkozlov.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Release;
@@ -603,6 +621,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -640,6 +659,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -660,7 +680,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -682,7 +702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
