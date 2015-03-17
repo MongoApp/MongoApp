@@ -225,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				6B96A1CF1A40EF86004BD54B /* Mongo.entitlements */,
-				6B7A1D1518B4A9EE002493B9 /* MongoApp */,
+				6B7A1D1518B4A9EE002493B9 /* Mongo */,
 				6B32306A18C298260064E3D0 /* MongoService */,
 				6B097F9F18C9DEF900826B45 /* MongoHelper */,
 				6B7A1D0E18B4A9EE002493B9 /* Frameworks */,
@@ -266,7 +266,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		6B7A1D1518B4A9EE002493B9 /* MongoApp */ = {
+		6B7A1D1518B4A9EE002493B9 /* Mongo */ = {
 			isa = PBXGroup;
 			children = (
 				6B097F7E18C8C18A00826B45 /* Constants.h */,
@@ -284,6 +284,7 @@
 				6B96A1D01A40F01D004BD54B /* ResourceRules.plist */,
 				6B7A1D1618B4A9EE002493B9 /* Supporting Files */,
 			);
+			name = Mongo;
 			path = MongoApp;
 			sourceTree = "<group>";
 		};
@@ -561,6 +562,7 @@
 				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -577,6 +579,7 @@
 				INFOPLIST_FILE = "MongoHelper/MongoHelper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
