@@ -35,6 +35,7 @@
 		6B96A1D11A40F01D004BD54B /* ResourceRules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B96A1D01A40F01D004BD54B /* ResourceRules.plist */; };
 		6BBBF3661AB8D11C0029FBE1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBBF3651AB8D11C0029FBE1 /* Sparkle.framework */; };
 		6BBBF3671AB8D1330029FBE1 /* Sparkle.framework in Copy Sparkle Framework */ = {isa = PBXBuildFile; fileRef = 6BBBF3651AB8D11C0029FBE1 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BBBF3691AB8D6CA0029FBE1 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBF3681AB8D6CA0029FBE1 /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		6B96A1CF1A40EF86004BD54B /* Mongo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Mongo.entitlements; sourceTree = "<group>"; };
 		6B96A1D01A40F01D004BD54B /* ResourceRules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResourceRules.plist; sourceTree = "<group>"; };
 		6BBBF3651AB8D11C0029FBE1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		6BBBF3681AB8D6CA0029FBE1 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 		6B7A1D1618B4A9EE002493B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BBBF3681AB8D6CA0029FBE1 /* dsa_pub.pem */,
 				6B3230A018C681590064E3D0 /* mongodb */,
 				6B7A1D1718B4A9EE002493B9 /* Mongo-Info.plist */,
 				6B7A1D1818B4A9EE002493B9 /* InfoPlist.strings */,
@@ -430,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBBF3691AB8D6CA0029FBE1 /* dsa_pub.pem in Resources */,
 				6B7A1D1A18B4A9EE002493B9 /* InfoPlist.strings in Resources */,
 				6B097F8018C8D6A500826B45 /* PreferencesWindow.xib in Resources */,
 				6B96A1D11A40F01D004BD54B /* ResourceRules.plist in Resources */,
